@@ -7,5 +7,5 @@
 int main(void) /* takes no values*/
 {
 	printf("with proper grammar, but the outcome is a piece of art,\n");
-	return (O);
+	return (0);
 }
