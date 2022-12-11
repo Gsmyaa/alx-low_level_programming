@@ -1,1 +1,1 @@
-this is c hello world course.
+this is start of c project
