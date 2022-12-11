@@ -1,7 +1,8 @@
 #include <stdio.h>
 
 /**
- *this function printout string using puts function
+ *main - entry point
+ *Return: Always 0
  */
 int main(void) /*it takes no value*/
 {

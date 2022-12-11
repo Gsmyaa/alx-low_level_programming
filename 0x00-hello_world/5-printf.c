@@ -1,7 +1,8 @@
 #include <stdio.h>
 
 /**
- *this funtion display string usning printf
+ *main - entry point
+ *Return: Always 0
  */
 int main(void) /* takes no values*/
 {
