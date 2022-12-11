@@ -1,11 +1,10 @@
 #include <stdio.h>
 
 /**
- *this funtion
- *display string usning printf
+ *this funtion display string usning printf
  */
-int main(void)
+int main(void) /* takes no values*/
 {
 	printf("with proper grammar, but the outcome is a piece of art,\n");
-	return (0);
+	return (0); /*returns zero value*/ 
 }
