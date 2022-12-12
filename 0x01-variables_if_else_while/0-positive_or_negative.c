@@ -6,7 +6,7 @@
 /* betty style doc for function main goes there */
 /**
  *main - display wether random number is positive or negative
- *return: 0 value iof
+ *Return: 0 value iof
  */
 int main(void)/*main - display wether random number is positive or negative*/
 {
