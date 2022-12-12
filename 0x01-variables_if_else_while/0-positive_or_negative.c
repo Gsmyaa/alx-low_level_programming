@@ -4,7 +4,9 @@
 /* more headers goes there */
 
 /* betty style doc for function main goes there */
-/* main - display wether random number is positive or negative*/
+/**
+ *main - display wether random number is positive or negative
+ */
 int main(void)/*main - display wether random number is positive or negative*/
 {
 		int n;
