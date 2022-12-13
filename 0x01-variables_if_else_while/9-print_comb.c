@@ -11,8 +11,9 @@ int main(void)
 	{
 		while (j < 9)
 		{
-			putchar((i + '0'), ' ');
-			putchar((j + '0'), ' ');
+			putchar(i + '0');
+			putchar(','' ');
+			putchar(j + '0');
 		}
 	}
 	putchar('\n');
