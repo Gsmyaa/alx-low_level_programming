@@ -10,9 +10,9 @@ int main(void)
 
 	while (n < 9)
 	{
-		_putchar(geda[n]);
+		putchar(geda[n]);
 		n++;
 	}
-	_putchar('\n');
+	putchar('\n');
 	return (0);
 }
