@@ -1,4 +1,4 @@
-#include <stdio.h>
+#include "main.h"
 /**
  *main - prints _putchar
  *Return: 0 value
@@ -10,9 +10,9 @@ int main(void)
 
 	while (n < 9)
 	{
-		putchar(geda[n]);
+		_putchar(geda[n]);
 		n++;
 	}
-	putchar('\n');
+	_putchar('\n');
 	return (0);
 }
