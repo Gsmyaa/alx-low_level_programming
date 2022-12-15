@@ -9,7 +9,7 @@ void pass1(int);
 void pass2(int);
 void jack_bauer(void)
 {
-	int i, j, k, l;
+	int i;
 
 	for (i = 0; i <= 2; i++)
 	{
@@ -19,7 +19,7 @@ void jack_bauer(void)
 		}
 		else
 		{
-			pass2(i)
+			pass2(i);
 		}
 	}
 }
@@ -30,6 +30,8 @@ void jack_bauer(void)
  */
 void pass1(int i)
 {
+	int j, k, l;
+
 	for (j = 0; j <= 3; j++)
 	{
 		for (k = 0; k <= 5; k++)
@@ -54,6 +56,8 @@ void pass1(int i)
  */
 void pass2(int i)
 {
+	int j, k, l;
+
 	for (j = 0; j <= 9; j++)
 	{
 		for (k = 0; k <= 5; k++)
