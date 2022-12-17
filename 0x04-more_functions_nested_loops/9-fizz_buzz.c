@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  *main - print number 0 - 10
  *Return: int
@@ -14,20 +15,19 @@ int main(void)
 		j = n % 5;
 		if ((i == 0) && (j == 0))
 		{
-			printf("FizzBuzz");
+			printf("FizzBuzz ");
 		}
 		else if (i == 0)
 		{
-			printf("Fizz");
+			printf("Fizz ");
 		}
 		else if (j == 0)
 		{
-			printf("Buzz");
+			printf("Buzz ");
 		}
 		else
 		{
-			_putchar(n + '0');
+			printf("%d\n", n);
 		}
-		_putchar(' ');
 	}
 }
