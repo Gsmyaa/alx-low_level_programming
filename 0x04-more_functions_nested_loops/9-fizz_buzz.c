@@ -9,7 +9,7 @@ int main(void)
 {
 	int n, i, j;
 
-	for (n = 0; n < 100; n++)
+	for (n = 1; n <= 100; n++)
 	{
 		i = n % 3;
 		j = n % 5;
@@ -27,7 +27,8 @@ int main(void)
 		}
 		else
 		{
-			printf("%d\n", n);
+			printf("%d ", n);
 		}
 	}
+	_putchar('\n');
 }
