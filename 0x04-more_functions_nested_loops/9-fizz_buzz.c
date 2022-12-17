@@ -26,8 +26,8 @@ int main(void)
 		}
 		else
 		{
-			putchar(n + '0');
+			_putchar(n + '0');
 		}
-		putchar(' ');
+		_putchar(' ');
 	}
 }
