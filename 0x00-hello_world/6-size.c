@@ -1,8 +1,8 @@
 #include <stdio.h>
 
 /**
- *main - entry point
- *Return - Always 0
+ *main - print size of various data type
+ *Return: 0 value
  */
 int main(void)
 {
@@ -11,6 +11,7 @@ int main(void)
 	long int a;
 	long long int b;
 	float f;
+
 	printf("Size of a char: %u byte(s)\n", sizeof(c));
 	printf("Size of an int: %u byte(s)\n", sizeof(i));
 	printf("Size of a long int: %u byte(s)\n", sizeof(a));
