@@ -1,7 +1,18 @@
 #include <stdio.h>
-#include <stdlib.h>
-int main()
+/**
+ *main - print out string
+ *Return: 1 value
+ */
+int main(void)
 {
-        write(1,"and that piece of art is useful\" - Dora Korpar, 2015-10-19",59);
-	return 0;
+	int i;
+	char c;
+	char string[] = { "and that piece of art is \
+		useful\" - Dora Korpar, 2015-10-19"};
+	for (i = 0; i < 58; i++)
+	{
+		c = string[i];
+		putchar(c);
+	}
+	putchar('\n');
 }
