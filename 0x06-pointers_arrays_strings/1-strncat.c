@@ -9,8 +9,7 @@
 char *_strncat(char *dest, char *src, int n)
 {
 	int i = 0, j = 0, k;
-	int slen = 0;
-	char *med = dest;
+	int len = 0;
 
 	while (dest[i] != '\0')
 	{
@@ -18,16 +17,17 @@ char *_strncat(char *dest, char *src, int n)
 	}
 	while (src[j] != '\0')
 	{
-		slen++;
+		len = len + 1;
 		j++;
 	}
-	if (n > slen)
+	if (n > len)
 	{
-		n = slen;
+		n = len;
 	}
 	for (k = 0; k < n; k++)
 	{
 		dest[i + k] = src[k];
 	}
-	return (med);
+	dest[i + k] = '\0';
+	return (dest);
 }
