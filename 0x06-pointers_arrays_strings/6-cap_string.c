@@ -10,7 +10,10 @@ char *cap_string(char *arr)
 
 	for (i = 0; arr[i] != '\0'; i++)
 	{
-		if (arr[i] == ' ' || arr[i] == '.' || arr[i] == '\n')
+		if (arr[i] == ' ' || arr[i] == '.' || arr[i] == '\n'
+			|| arr[i] == ';' || arr[i] == ',' ||
+			arr[i] == '!' || arr[i] == '?' || arr[i] == '"' || arr[i] == '(' ||
+			arr[i] == ')' || arr[i] == '{' || arr[i] == '}')
 		{
 			if (arr[i + 1] >= 'a' && arr[i + 1] <= 'z')
 			{
