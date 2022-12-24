@@ -1,15 +1,14 @@
-#includ "main.h"
+#include "main.h"
 /**
- *_strncat - function that concatenates two strings
+ *_strncat - concatenates two strings
  *@dest: input array
  *@src: input array
- *@n: input digit
- *Return: char type
+ *@n: input bytes
+ *Return: char array
  */
 char *_strncat(char *dest, char *src, int n)
 {
-	int i = 0, j = 0, k;
-	int len = 0;
+	int i = 0, j = 0, len = 0, k;
 
 	while (dest[i] != '\0')
 	{
@@ -24,10 +23,10 @@ char *_strncat(char *dest, char *src, int n)
 	{
 		n = len;
 	}
-	for (k = 0; k < n; k++)
+	for (k = 0; src[k] != '\0'; k++)
 	{
-		dest[i + k] = src[k];
+		dest[i++] = src[k];
 	}
-	dest[i + k] = '\0';
+	dest[i++] = '\0';
 	return (dest);
 }
