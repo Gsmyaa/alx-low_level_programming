@@ -2,7 +2,7 @@
 int check_symbol(char c);
 /**
  *cap_string - capitalize all words of string
- *@arr: input arrya
+ *@arr: input array
  *Return: char array value
  */
 char *cap_string(char *arr)
@@ -11,7 +11,7 @@ char *cap_string(char *arr)
 
 	for (i = 0; arr[i] != '\0'; i++)
 	{
-		if (i == 0; &&(arr[i] >= 'a' && arr[i] <= 'z'))
+		if (i == 0 && (arr[i] >= 'a' && arr[i] <= 'z'))
 		{
 			arr[i] = arr[i] - 32;
 		}
@@ -25,16 +25,17 @@ char *cap_string(char *arr)
 	}
 	return (arr);
 }
+
 /**
- *check_symbol - checks symbol for seperators
+ *check_symbol - checks input char if it is separators
  *@c: input char from cap_string function
  *Return: int value to cap_string function
  */
 int check_symbol(char c)
 {
 	int i;
-	char symbol[] = {',', ';', '.', '!', '?', '"',
-		'(', ')', '{', '}', '\n', '\t', ' '};
+	char symbol[] = {',', ';', '.', '!', '?', '"', '(',
+		')', '{', '}', '\n', '\t', ' '};
 
 	for (i = 0; symbol[i]; i++)
 	{
