@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  *rot13 - encodes a string using rot13
- *@c: input char from main function
+ *@c: input char from main funtion
  *Return: char pointer
  */
 char *rot13(char *c)
@@ -23,4 +23,5 @@ char *rot13(char *c)
 			i++;
 		}
 	}
+	return (c);
 }
