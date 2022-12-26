@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  *rot13 - encodes a string using rot13
- *@c: input char from main funtion
+ *@c: input char from main function
  *Return: char pointer
  */
 char *rot13(char *c)
@@ -10,9 +10,9 @@ char *rot13(char *c)
 
 	for (i = 0; c[i] != '\0'; i++)
 	{
-		while ((c[i] >= 97 && c[i] <= 122) || (c[i] >= 65 && c[i] <= 90))
+		while ((c[i] >= 'a' && c[i] <= 'z') || (c[i] >= 'A' && c[i] <= 'Z'))
 		{
-			if ((c[i] >= 65 && c[i] <= 77) || (c[i] >= 97 && c[i] <= 109))
+			if ((c[i] >= 'A' && c[i] <= 'M') || (c[i] >= 'a' && c[i] <= 'm'))
 			{
 				c[i] += 13;
 			}
@@ -23,5 +23,4 @@ char *rot13(char *c)
 			i++;
 		}
 	}
-	return (c);
 }
