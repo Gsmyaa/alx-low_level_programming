@@ -1,6 +1,5 @@
 #include "main.h"
 #include <stdlib.h>
-int _mul(int, int);
 /**
  *main - multiply two numbers
  *@argc: input argument
@@ -16,12 +15,11 @@ int main(int argc, char *argv[])
 		printf("%s\n", "Error");
 		return (1);
 	}
-	printf("%d\n", res);
-	return (0);
 	n1 = atoi(argv[1]);
 	n2 = atoi(argv[2]);
 	res = _mul(n1, n2);
 	printf("%d\n", res);
+	return (0);
 }
 /**
  *_mul - multiply two numbers
