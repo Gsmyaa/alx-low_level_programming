@@ -1,5 +1,6 @@
 #include "main.h"
 #include <stdlib.h>
+int _mul(int,int);
 /**
  *main - multiply two numbers
  *@argc: input argument
