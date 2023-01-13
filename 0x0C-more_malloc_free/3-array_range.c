@@ -27,6 +27,5 @@ int *array_range(int min, int max)
 			min++;
 		}
 	}
-	ar[i] = '\0';
 	return (ar);
 }
