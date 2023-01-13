@@ -2,13 +2,13 @@
 /**
  *malloc_checked - allocates memory
  *@b: input
- *@Return: void pointer
+ *Return: void pointer
  */
 void *malloc_checked(unsigned int b)
 {
 	void *ar;
 
-	ar = malloc(sizeof(unsigned int) * b);
+	ar = malloc(b);
 	if (ar == NULL)
 	{
 		exit(98);
