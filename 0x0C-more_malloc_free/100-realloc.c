@@ -27,7 +27,7 @@ void *_realloc(void *ptr, unsigned int old_size, unsigned int new_size)
 	ar = malloc(new_size);
 	if (ar == NULL)
 		return (0);
-	for (i = 0; i < old_size || i < new_size; i++)
+	for (i = 0; i < old_size; i++)
 	{
 		ar[i] = cpy[i];
 	}
