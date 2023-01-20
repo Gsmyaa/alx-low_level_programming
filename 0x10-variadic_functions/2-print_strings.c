@@ -18,20 +18,20 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	va_start(lists, n);
 	for (i = 0; i < n; i++)
 	{
-		if (va_arg(lists, int))
+		ar = va_arg(lists, char *);
+		if (ar)
 		{
 			if (i < n - 1)
 			{
-				ar = va_arg(lists, char *);
 				printf("%s%s", ar, separator);
 			}
 			else
 			{
-				ar = va_arg(lists, char *);
-				printf("%s", ar);
+				printf("%s\n", ar);
 			}
 		}
 		else
 			printf("nil\n");
 	}
+	va_end(lists);
 }
