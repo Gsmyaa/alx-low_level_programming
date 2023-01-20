@@ -25,8 +25,8 @@ void print_numbers(const char *separator, const unsigned int n, ...)
 		else
 		{
 			j = va_arg(lists, int);
-			printf("%d\n", j);
+			printf("%d", j);
 		}
 	}
-	va_end(lists);
+	printf("\n");
 }
