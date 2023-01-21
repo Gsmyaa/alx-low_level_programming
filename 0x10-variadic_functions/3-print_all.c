@@ -32,8 +32,8 @@ void print_all(const char * const format, ...)
 				break;
 			case 's':
 				str = va_arg(lists, char *);
-				if (str == NULL)
-					printf("nil");
+				if (!str)
+					printf("(nil)");
 				printf("%s", str);
 				break;
 			default:
@@ -48,5 +48,5 @@ void print_all(const char * const format, ...)
 		}
 		i++;
 	}
-	printf("\n");
+	printf("\n"), va_end(lists);
 }
