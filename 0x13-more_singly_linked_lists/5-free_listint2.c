@@ -1,17 +1,14 @@
 #include "lists.h"
-#include <stdlib.h>
 /**
- *free_listint2 - free listint
- *@head: input linked list
+ *free_listint2 - frees linked list
+ *@head: input address of linked list
  *Return: nothing
  */
 void free_listint2(listint_t **head)
 {
 	listint_t *new, *temp;
 	if (head == NULL)
-	{
-		return (NULL);
-	}
+		return;
 	new = *head;
 	while (new)
 	{
@@ -20,5 +17,4 @@ void free_listint2(listint_t **head)
 		free(temp);
 	}
 	*head = NULL;
-	
 }
