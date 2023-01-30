@@ -1,4 +1,5 @@
 #include "lists.h"
+#include <stdlib.h>
 /**
  *free_listint2 - frees linked list
  *@head: input address of linked list
