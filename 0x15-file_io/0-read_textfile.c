@@ -3,13 +3,12 @@
 #include <stddef.h>
 #include <stdlib.h>
 #include <unistd.h>
-#include <fcntl.h>
 #include <sys/types.h>
 #include <sys/stat.h>
 /**
- *read_textfile - reads text fileand prints it to posix stdout
+ *read_textfile - reads text file and prints it to posix stdout
  *@filename: input address of file
- *@letters: number of letters to be printed
+ *@letters: numbe of letters to be printed
  *Return: actual numbers letters
  */
 ssize_t read_textfile(const char *filename, size_t letters)
@@ -29,14 +28,14 @@ ssize_t read_textfile(const char *filename, size_t letters)
 		close(file_d);
 		return (0);
 	}
-	cnt = read(file_d, buf, letters);
+	cnt = read(file_d, bf, letters);
 	if (cnt < 0)
 	{
 		free(buf);
 		close(file_d);
 		return (0);
 	}
-	cnt = write(STDOUT_FILENO, buf, cnt);
+	cont = write(STDOUT_FILENO, buf, cnt);
 	free(buf);
 	close(file_d);
 	if (cnt < 0)
