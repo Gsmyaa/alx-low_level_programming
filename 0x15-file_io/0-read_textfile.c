@@ -7,7 +7,7 @@
 #include <sys/types.h>
 #include <sys/stat.h>
 /**
- *read_textfile - reads text file and prints it to posix stdout
+ *read_textfile - reads text fileand prints it to posix stdout
  *@filename: input address of file
  *@letters: number of letters to be printed
  *Return: actual numbers letters
