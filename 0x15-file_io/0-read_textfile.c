@@ -1,10 +1,4 @@
 #include "main.h"
-#include <stdio.h>
-#include <stddef.h>
-#include <stdlib.h>
-#include <unistd.h>
-#include <sys/types.h>
-#include <sys/stat.h>
 /**
  *read_textfile - reads text file and prints it to posix stdout
  *@filename: input address of file
@@ -16,7 +10,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	int file_d;
 	ssize_t cnt = 0;
 	char *buf;
-	
+
 	if (!filename)
 		return (0);
 	file_d = open(filename, O_RDONLY);
