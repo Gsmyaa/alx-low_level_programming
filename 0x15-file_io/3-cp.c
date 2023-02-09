@@ -11,8 +11,8 @@
 int main(int argc, char *argv[])
 {
 	int file_d_1, file_d_2;
-	int cnt1, i, j, len1 = 1024;
-	char *buf;
+	int cnt1, i, j;
+	char buf[1024];
 
 	if (argc != 3)
 	{
@@ -25,12 +25,10 @@ int main(int argc, char *argv[])
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
 		exit(98);
 	}
-	buf = malloc(len1);
-	cnt1 = read(file_d_1, buf, len1);
+	cnt1 = read(file_d_1, buf, 1024);
 	if (cnt1 < 0)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't read from file %s\n", argv[1]);
-		free(buf);
 		close(file_d_1);
 		exit(98);
 	}
@@ -39,16 +37,14 @@ int main(int argc, char *argv[])
 	if (file_d_2 < 0)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
-		free(buf);
 		close(file_d_2);
 		close(file_d_1);
 		exit(99);
 	}
-	i = write(file_d_2, buf, len1);
+	i = write(file_d_2, buf, cnt1);
 	if (i < 0)
 	{
 		dprintf(STDERR_FILENO, "Error: Can't write to %s\n", argv[2]);
-		free(buf);
 		close(file_d_2);
 		close(file_d_1);
 		exit(99);
