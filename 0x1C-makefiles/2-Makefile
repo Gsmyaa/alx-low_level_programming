@@ -10,6 +10,3 @@ OBJ = $(SRC:.c=.o)
 # default rule
 all : $(OBJ)
 	$(CC) $(OBJ) -o $(NAME)
-
-$(OBJ) : $(SRC)
-	$(CC) -c -o $(SRC) $(OBJ)
