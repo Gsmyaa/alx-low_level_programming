@@ -1,0 +1,12 @@
+# create my first useful Makefile
+
+# Variables for: Compiler, source file, name of executable\
+	object files
+CC = gcc
+SRC = main.c school.c
+NAME = school
+OBJ = $(SRC:.c=.o)
+
+# default rule
+all : $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
